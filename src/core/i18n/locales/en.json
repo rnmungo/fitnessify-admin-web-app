@@ -1,0 +1,181 @@
+{
+  "api": {
+    "auth": {
+      "sign-in": {
+        "error": {
+          "not-authorized": "The username or password is incorrect"
+        }
+      }
+    },
+    "common": {
+      "error": {
+        "internal-error": "An internal server error occurred",
+        "unknown-error": "An unknown error occurred"
+      }
+    }
+  },
+  "audits-page": {
+    "filters": {
+      "action": "Action",
+      "button": "Table filters",
+      "from": "From",
+      "icon-retry": "Retry search",
+      "label-retry": "Try loading the companies again",
+      "tenant": "Company",
+      "title": "Filters",
+      "to": "To"
+    },
+    "body-detail": {
+      "no-data": "No data",
+      "title": "Body detail"
+    },
+    "table": {
+      "empty": {
+        "message": "No audit logs found."
+      },
+      "error": {
+        "message": "There was an error loading audit logs. Please try retrying your search."
+      },
+      "name": "Audits"
+    },
+    "table-actions": {
+      "see-detail": "See body",
+      "menu-title": "Options"
+    },
+    "table-columns": {
+      "date": "Date",
+      "origin": "Origin",
+      "resource": "Resource",
+      "user": "User"
+    }
+  },
+  "common": {
+    "password-strength": {
+      "insecure-password": "Insecure password",
+      "password": "Password",
+      "recommendations": "Use at least 8 characters, including uppercase letters, lowercase letters, numbers, and special symbols.",
+      "secure-password": "Secure password",
+      "weak-password": "Weak password"
+    },
+    "table": {
+      "actions": "Actions",
+      "more-pages": "more than {{to}}",
+      "next-page": "Go to next page",
+      "pagination": "{{from}}-{{to}} of {{total}}",
+      "previous-page": "Go to previous page",
+      "rows-per-page": "Rows per page:"
+    },
+    "wordings": {
+      "action-cannot-undone": "This action cannot be undone.",
+      "activating": "Activating...",
+      "all": "All",
+      "apply": "Apply",
+      "cancel": "Cancel",
+      "canceling": "Canceling...",
+      "close": "Close",
+      "confirm": "Confirm",
+      "deactivating": "Deactivating...",
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "loading": "Loading...",
+      "navigation-menu": "Navigation menu",
+      "not-established": "Not established",
+      "retry": "Retry",
+      "error-occurred-retry-search": "An error occurred, please retry the search.",
+      "save": "Save",
+      "saving": "Saving...",
+      "see-options": "See options",
+      "there-are-no-elements": "There are no elements",
+      "unselected": "Unselected",
+      "user-menu": "User menu",
+      "wait": "Wait"
+    }
+  },
+  "home-page": {
+    "features": {
+      "audits": {
+        "title": "Audits",
+        "description": "Monitor users' movements to ensure they are performing permitted actions."
+      },
+      "logs": {
+        "title": "Logs",
+        "description": "Create, customize and organize training programs for your clients, adapted to their level and objectives."
+      }
+    },
+    "presentation": {
+      "title": "Welcome to Fitnessify Monitoring",
+      "sub-title": "Your comprehensive monitoring and reporting platform"
+    }
+  },
+  "login-page": {
+    "actions": {
+      "sign-in": "Sign in"
+    },
+    "inputs": {
+      "password": "Password",
+      "username": "User"
+    },
+    "mutation": {
+      "loading": "Signing in"
+    },
+    "validations": {
+      "password": "Enter password",
+      "username": "Enter username"
+    }
+  },
+  "logs-page": {
+    "filters": {
+      "application": "Application",
+      "button": "Table filters",
+      "from": "From",
+      "icon-retry": "Retry search",
+      "label-retry": "Try loading the companies again",
+      "tenant": "Company",
+      "title": "Filters",
+      "to": "To"
+    },
+    "log-detail": {
+      "no-data": "No data",
+      "title": "Log detail"
+    },
+    "table": {
+      "empty": {
+        "message": "No logs were found."
+      },
+      "error": {
+        "message": "There was an error loading the logs. Please try retrying your search."
+      },
+      "name": "Logs"
+    },
+    "table-actions": {
+      "see-detail": "See detail",
+      "menu-title": "Options"
+    },
+    "table-columns": {
+      "application": "Application",
+      "date": "Date",
+      "message": "Message"
+    }
+  },
+  "main": {
+    "language": {
+      "english": "English",
+      "selector": "Language selector",
+      "spanish": "Spanish"
+    },
+    "meta": {
+      "description": "Management and monitoring application"
+    },
+    "navigation": {
+      "audits": "Audits",
+      "home": "Home",
+      "logs": "Logs",
+      "sign-in": "Sign in",
+      "sign-out": "Sign out",
+      "signing-out": "Signing out"
+    }
+  },
+  "password-field": {
+    "icon-label": "Toggle password visibility"
+  }
+}

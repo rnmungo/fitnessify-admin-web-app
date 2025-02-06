@@ -1,0 +1,181 @@
+{
+  "api": {
+    "auth": {
+      "sign-in": {
+        "error": {
+          "not-authorized": "El usuario o contraseña son incorrectos"
+        }
+      }
+    },
+    "common": {
+      "error": {
+        "internal-error": "Se produjo un error interno del servidor",
+        "unknown-error": "Se produjo un error desconocido"
+      }
+    }
+  },
+  "audits-page": {
+    "filters": {
+      "action": "Acción",
+      "button": "Filtros de la tabla",
+      "from": "Desde",
+      "icon-retry": "Reintentar búsqueda",
+      "label-retry": "Intente cargar las empresas nuevamente",
+      "tenant": "Empresa",
+      "title": "Filtros",
+      "to": "Hasta"
+    },
+    "body-detail": {
+      "no-data": "Sin datos",
+      "title": "Detalle del body"
+    },
+    "table": {
+      "empty": {
+        "message": "No se encontraron registros de auditoría."
+      },
+      "error": {
+        "message": "Hubo un error al cargar los registros de auditoría. Por favor, pruebe con reintentar la búsqueda."
+      },
+      "name": "Auditoría"
+    },
+    "table-actions": {
+      "see-detail": "Ver body",
+      "menu-title": "Opciones"
+    },
+    "table-columns": {
+      "date": "Fecha",
+      "origin": "Origen",
+      "resource": "Recurso",
+      "user": "Usuario"
+    }
+  },
+  "common": {
+    "password-strength": {
+      "insecure-password": "Contraseña insegura",
+      "password": "Contraseña",
+      "recommendations": "Usa al menos 8 caracteres, incluyendo letras mayúsculas, minúsculas, números y símbolos especiales.",
+      "secure-password": "Contraseña segura",
+      "weak-password": "Contraseña poco segura"
+    },
+    "table": {
+      "actions": "Acciones",
+      "more-pages": "más de {{to}}",
+      "next-page": "Ir a la página siguiente",
+      "pagination": "{{from}}-{{to}} de {{total}}",
+      "previous-page": "Ir a la página anterior",
+      "rows-per-page": "Filas por página:"
+    },
+    "wordings": {
+      "action-cannot-undone": "Esta acción no se puede deshacer.",
+      "activating": "Activando...",
+      "all": "Todos",
+      "apply": "Aplicar",
+      "cancel": "Cancelar",
+      "canceling": "Cancelando...",
+      "close": "Cerrar",
+      "confirm": "Confirmar",
+      "deactivating": "Desactivando...",
+      "delete": "Eliminar",
+      "deleting": "Eliminando...",
+      "loading": "Cargando...",
+      "navigation-menu": "Menú de navegación",
+      "not-established": "No establecido",
+      "retry": "Reintentar",
+      "error-occurred-retry-search": "Ocurrió un error, reintente la búsqueda.",
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "see-options": "Ver opciones",
+      "there-are-no-elements": "No hay elementos",
+      "unselected": "Sin seleccionar",
+      "user-menu": "Menú de usuario",
+      "wait": "Aguarde"
+    }
+  },
+  "home-page": {
+    "features": {
+      "audits": {
+        "title": "Auditoría",
+        "description": "Controlá los movimientos de los usuarios para asegurarte de que estén ejecutando acciones permitidas."
+      },
+      "logs": {
+        "title": "Logs",
+        "description": "Revisá el detalle de los logs para entender qué está sucediendo internamente en tus aplicaciones."
+      }
+    },
+    "presentation": {
+      "title": "Bienvenido a Fitnessify Monitoring",
+      "sub-title": "Tu plataforma integral de monitoreo y reporting"
+    }
+  },
+  "login-page": {
+    "actions": {
+      "sign-in": "Iniciar Sesión"
+    },
+    "inputs": {
+      "password": "Contraseña",
+      "username": "Usuario"
+    },
+    "mutation": {
+      "loading": "Iniciando sesión"
+    },
+    "validations": {
+      "password": "Ingrese la contraseña",
+      "username": "Ingrese el nombre de usuario"
+    }
+  },
+  "logs-page": {
+    "filters": {
+      "application": "Aplicación",
+      "button": "Filtros de la tabla",
+      "from": "Desde",
+      "icon-retry": "Reintentar búsqueda",
+      "label-retry": "Intente cargar las empresas nuevamente",
+      "tenant": "Empresa",
+      "title": "Filtros",
+      "to": "Hasta"
+    },
+    "log-detail": {
+      "no-data": "Sin datos",
+      "title": "Detalle del log"
+    },
+    "table": {
+      "empty": {
+        "message": "No se encontraron logs."
+      },
+      "error": {
+        "message": "Hubo un error al cargar los logs. Por favor, pruebe con reintentar la búsqueda."
+      },
+      "name": "Logs"
+    },
+    "table-actions": {
+      "see-detail": "Ver detalle",
+      "menu-title": "Opciones"
+    },
+    "table-columns": {
+      "application": "Aplicación",
+      "date": "Fecha",
+      "message": "Mensaje"
+    }
+  },
+  "main": {
+    "language": {
+      "english": "Inglés",
+      "selector": "Selector de idioma",
+      "spanish": "Español"
+    },
+    "meta": {
+      "description": "Aplicación de administración y monitoreo"
+    },
+    "navigation": {
+      "audits": "Auditoría",
+      "home": "Inicio",
+      "logs": "Logs",
+      "sign-in": "Iniciar sesión",
+      "sign-out": "Cerrar sesión",
+      "signing-out": "Cerrando sesión"
+    }
+  },
+  "password-field": {
+    "icon-label": "Alternar visibilidad de contraseña"
+  }
+}
