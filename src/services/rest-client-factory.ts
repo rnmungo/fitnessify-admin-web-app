@@ -4,8 +4,8 @@ type HeaderValue = boolean | number | string;
 
 class RestClientFactory {
   private headers: Record<string, HeaderValue> = {
-    'X-Caller-Scopes': 'fitnessify-tenant-ui',
-    'X-Scope-Id': 'fitnessify-tenant-ui',
+    'X-Caller-Scopes': 'fitnessify-admin-ui',
+    'X-Scope-Id': 'fitnessify-admin-ui',
     Accept: 'application/json',
     'Content-Type': 'application/json',
   };

@@ -13,6 +13,7 @@ import MuiButton from '@mui/material/Button';
 import MuiTooltip from '@mui/material/Tooltip';
 import MuiMenuItem from '@mui/material/MenuItem';
 import MuiAdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import MuiPersonIcon from '@mui/icons-material/Person';
 import { useTranslation } from '@/core/i18n/context';
 
 interface Link {
@@ -20,15 +21,8 @@ interface Link {
   onClick: () => void;
 }
 
-interface AvatarProps {
-  src?: string;
-  alt?: string;
-  text?: string;
-}
-
 interface NavigationProps {
   logo: string;
-  avatar: AvatarProps;
   widget?: React.ReactNode;
   links?: Link[] | null;
   settings?: Link[] | null;
@@ -36,7 +30,6 @@ interface NavigationProps {
 
 const Navigation = ({
   logo,
-  avatar,
   widget,
   links = null,
   settings = null,
@@ -165,24 +158,14 @@ const Navigation = ({
                 onClick={handleOpenUserMenu}
                 sx={{ p: 0, ml: 2 }}
               >
-                {avatar.src ? (
-                  <MuiAvatar
-                    sx={{ bgcolor: teal[500] }}
-                    alt={avatar.alt}
-                    src={avatar.src}
-                  />
-                ) : (
-                  <MuiAvatar
-                    sx={{
-                      bgcolor: teal[500],
-                      color: 'primary.contrastText',
-                    }}
-                  >
-                    <MuiTypography variant="subtitle1" noWrap>
-                      {avatar.text}
-                    </MuiTypography>
-                  </MuiAvatar>
-                )}
+                <MuiAvatar
+                  sx={{
+                    bgcolor: teal[500],
+                    color: 'primary.contrastText',
+                  }}
+                >
+                  <MuiPersonIcon />
+                </MuiAvatar>
               </MuiIconButton>
             </MuiTooltip>
             <MuiMenu

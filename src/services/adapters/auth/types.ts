@@ -4,7 +4,6 @@ export interface DecodedToken {
   exp: number;
   'http://schemas.microsoft.com/ws/2008/06/identity/claims/role': string[];
   iat: number;
-  tenant: string;
 }
 
 export interface AuthorizationData {

@@ -18,7 +18,6 @@ export const searchLogs = async ({ token, filters }: SearchLogsParams) => {
     `/api/log/search?${queryString}`,
     {
       headers: {
-        'X-Application-Id': process.env.TENANT,
         Authorization: `Bearer ${token}`,
       },
     },

@@ -8,15 +8,10 @@ export type SignInParams = {
 
 export const signIn = async ({ email, password }: SignInParams) => {
   const response = await gatewayClient.post(
-    '/api/account/login',
+    '/api/account/login-base',
     {
       email,
       password,
-    },
-    {
-      headers: {
-        'X-Application-Id': process.env.TENANT,
-      },
     },
   );
   return adaptAuthorization(response.data);

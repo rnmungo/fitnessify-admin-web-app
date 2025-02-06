@@ -1,7 +1,6 @@
 import type { BaseSession } from '@/types/session';
 
 export const defaultSession: BaseSession = {
-  applicationId: '',
   isLoggedIn: false,
   authorization: {
     expires: 0,
@@ -12,6 +11,5 @@ export const defaultSession: BaseSession = {
     id: '',
     email: '',
     roles: [],
-    tenant: '',
   },
 };

@@ -3,7 +3,6 @@ import { HTTP_STATUS } from '@/constants/http-status';
 import { ADMIN_ROLE } from '@/core/auth/constants/roles';
 import { ApiError, handleCommonError } from '@/core/error/error-handler';
 import { signIn } from '@/services/auth/service';
-import { getMyProfile } from '@/services/profile/service';
 import logger from '@/utilities/loggerUtils';
 import { sessionOptions } from '@/utilities/session/options';
 import type { NextApiRequest, NextApiResponse } from 'next';
@@ -23,13 +22,10 @@ export default async function handler(
         throw new ApiError('api.auth.sign-in.error.not-authorized');
       }
 
-      const profile = await getMyProfile({ token: authorization.token });
-
       const session = await getIronSession<Session>(req, res, sessionOptions);
       session.authorization = authorization;
       session.isLoggedIn = isLoggedIn;
       session.user = user;
-      session.profile = profile;
 
       await session.save();
 

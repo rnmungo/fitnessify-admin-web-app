@@ -12,11 +12,9 @@ export const adaptAuthorization = (data: AuthorizationData = {}): BaseSession =>
       exp: expires,
       'http://schemas.microsoft.com/ws/2008/06/identity/claims/role': roles,
       iat: issuedAt,
-      tenant,
     } = decodedToken;
 
     return {
-      applicationId: tenant,
       isLoggedIn: true,
       authorization: {
         expires,
@@ -28,7 +26,6 @@ export const adaptAuthorization = (data: AuthorizationData = {}): BaseSession =>
         id: userId,
         email,
         roles,
-        tenant,
       },
     };
   }
