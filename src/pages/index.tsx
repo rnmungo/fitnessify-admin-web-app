@@ -1,5 +1,6 @@
 import { GetServerSideProps, NextPage } from 'next';
 import MuiBox from '@mui/material/Box';
+import MuiButton from '@mui/material/Button';
 import MuiCard from '@mui/material/Card';
 import MuiCardContent from '@mui/material/CardContent';
 import MuiCardMedia from '@mui/material/CardMedia';
@@ -79,6 +80,24 @@ const HomePage: NextPage = () => {
           </MuiGrid>
         ))}
       </MuiGrid>
+      <MuiBox mt={6} textAlign="center">
+        <MuiTypography component="p" variant="body1" color="textSecondary" gutterBottom>
+          {t('home-page.user_manual.explain')}
+        </MuiTypography>
+        <MuiButton
+          sx={{ mt: 1 }}
+          aria-label={t('home-page.user_manual.download')}
+          variant="text"
+          color="primary"
+          size="large"
+          href="/documentation/user_manual.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          {t('home-page.user_manual.download')}
+        </MuiButton>
+      </MuiBox>
     </MuiContainer>
   );
 };

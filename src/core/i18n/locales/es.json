@@ -105,6 +105,10 @@
     "presentation": {
       "title": "Bienvenido a Fitnessify Monitoring",
       "sub-title": "Tu plataforma integral de monitoreo y reporting"
+    },
+    "user-manual": {
+      "explain": "Accedé al manual de usuario para obtener una guía completa sobre cómo utilizar la plataforma. Podés descargarlo para consultarlo en cualquier momento.",
+      "download": "Descargar Manual"
     }
   },
   "login-page": {
